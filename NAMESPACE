@@ -1,0 +1,8 @@
+exportPattern("^[[:alpha:]]+")
+import(stats)
+import(utils)
+import(gdsfmt)
+import(dplyr)
+import(ggplot2)
+import(tidyr)
+import(SNPRelate)

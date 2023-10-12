@@ -1,0 +1,11 @@
+Package: EffectivePopSize
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <josephineprincy98@gmail.com>
+Description: This package calculates Ne using Linkage disequilibrium file (.ld)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: gdsfmt, ggplot2, dplyr, tidyr, utils, SNPRelate, stats
