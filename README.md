@@ -5,7 +5,9 @@ This Package helps to estimate effective population size (Ne) in crops using lin
 Install Package:
 
 Library(devtools)
+
 devtools::install_github("PrincyJohnson/EffectivePopSize")
+
 Library(EffectivePopSize)
 
 
