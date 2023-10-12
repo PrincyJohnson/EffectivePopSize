@@ -71,7 +71,7 @@ Nemodel<- function(bed,fam,bim,ld,cM, species_name){
 
 
   ### Calculate morgans
-  morgans<- bp/(cM*100)
+  morgans<- Phy_dist/(cM*100)
   Na_omit_data<- na.omit(data.frame(r2= r2, distance=morgans))  ###Removing Na's
 
   #Calculation of mean r2 for distance cM
