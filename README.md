@@ -2,7 +2,7 @@
 This Package helps to estimate effective population size (Ne) in crops using linkage disequilibrium file (.ld)
 
 
-Install Package:
+**Install Package:**
 
 Library(devtools)
 
@@ -12,7 +12,7 @@ Library(EffectivePopSize)
 
 
 
-Use:
+**How to use:**
 
 Nemodel(bed, bim, fam, ld, cM, species_name)
 
@@ -29,4 +29,4 @@ ld = directory of the ld file eg. "Documents/ldfile"
 cM = 1 cM value in your species (in Kb)
 
 
-This package provides PCA, LD and recombination frequency plots and finally Ne estimation
+**This package provides PCA, LD and recombination frequency plots and finally Ne estimation**
