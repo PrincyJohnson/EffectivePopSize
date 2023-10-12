@@ -77,23 +77,22 @@ Nemodel<- function(bed,fam,bim,ld,cM, species_name){
   #Calculation of mean r2 for distance cM
   Meanr2 <- Na_omit_data %>% group_by(distance) %>% summarize(mean(r2)) ## average of r^2
 
-  colnames(Meanr2)<-c("Dist","Chromosome" ,"meanr2")
   Meanr2$Species <- species_name
 
   ### Plot for mean r2
-  qplot(Dist, meanr2, data=Meanr2, ylab=bquote('Mean ('*r^2*')'), xlab='Recombination frequency (Morgans)',
+  qplot(distance, `mean(r2)`, data=Meanr2, ylab=bquote('Mean ('*r^2*')'), xlab='Recombination frequency (Morgans)',
         group =Species, colour =Species, alpha=I(1/256), geom=c('smooth'), span=50000+
           theme(legend.justification=c(1,1), legend.position=c(1,1))) + theme_bw()
   ggsave('Meanr2vsRecombination.png',width=4, height=2,dpi=300)
 
   ### To predict expected (r2), create a model with mean r2 and distance
-  X<-as.matrix(cbind(1,Meanr2$Dist))
-  beta.hat<-solve(t(X)%*%X) %*% t(X) %*% Meanr2$meanr2
+  X<-as.matrix(cbind(1,Meanr2$distance))
+  beta.hat<-solve(t(X)%*%X) %*% t(X) %*% Meanr2$`mean(r2)`
   mu.hat<- X %*% beta.hat  ###predict
 
   ### Fit Sved formula using linear regression - remove intercept
   response<- (1/mu.hat)-1
-  predictor<- Meanr2$Dist*4
+  predictor<- Meanr2$distance*4
 
   beta_hat_Ne<-solve(t(predictor)%*%predictor) %*% t(predictor) %*% response
 
