@@ -14,7 +14,7 @@ This Package helps to estimate effective population size (Ne) in crops using lin
 
 **How to use:**
 
-Nemodel(bed, bim, fam, ld, cM, species_name)
+                    Nemodel(bed, bim, fam, ld, cM, species_name)
 
                               bed = directory of the bed file eg. "/Documents/plink.bed"
                               
