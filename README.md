@@ -26,7 +26,7 @@ This Package helps to estimate effective population size (Ne) in crops using lin
                                 
                               ld = directory of the ld file eg. "Documents/ldfile"
                               
-                              cM = 1 cM value in your species (in Kb)
+                              cM = 1 cM value in your species (in Kb) eg. 200
 
 
 **This package provides PCA, LD and recombination frequency plots and finally Ne estimation**
