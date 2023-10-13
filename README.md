@@ -14,19 +14,17 @@ This Package helps to estimate effective population size (Ne) in crops using lin
 
 **How to use:**
 
-                    Nemodel(bed, bim, fam, ld, cM, species_name)
+              Nemodel(bed, bim, fam, ld, cM, species_name)
 
-                              bed = directory of the bed file eg. "/Documents/plink.bed"
+               bed = directory of the bed file eg. "/Documents/plink.bed"
                               
-                              bim = directory of the bim file eg. "/Documents/plink.bim"
+               bim = directory of the bim file eg. "/Documents/plink.bim"
                               
-                              fam = directory of the fam file eg. "/Documents/plink.fam"
-                              
-                              * Use prefix 'plink' for bed, bim, and fam files*
+               fam = directory of the fam file eg. "/Documents/plink.fam"
                                 
-                              ld = directory of the ld file eg. "Documents/ldfile"
+               ld = directory of the ld file eg. "Documents/ldfile"
                               
-                              cM = 1 cM value in your species (in Kb) eg. 200
+               cM = 1 cM value in your species (in Kb) eg. 200
 
 
 **This package provides PCA, LD and recombination frequency plots and finally Ne estimation**
