@@ -1,5 +1,5 @@
 # EffectivePopSize
-This Package helps to estimate effective population size (Ne) in crops using linkage disequilibrium file (.ld)
+This package is designed to facilitate the estimation of effective population size (Ne) in crop species by analyzing linkage disequilibrium data stored in .ld files.
 
 
 **Install Package:**
@@ -27,4 +27,4 @@ This Package helps to estimate effective population size (Ne) in crops using lin
                cM = 1 cM value in your species (in Kb) eg. 200
 
 
-**This package provides PCA, LD and recombination frequency plots and finally Ne estimation**
+**This package offers a comprehensive suite of tools for genetic analysis, including Principal Component Analysis (PCA), Linkage Disequilibrium (LD) plotting, recombination frequency plotting, and precise estimation of Ne (effective population size).**
