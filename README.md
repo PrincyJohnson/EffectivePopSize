@@ -15,12 +15,6 @@ This package is designed to facilitate the estimation of effective population si
                 
                 library(SNPRelate)
                 
-                library(dplyr)
-                
-                library(ggplot2)
-                
-                library(tidyr)
-                
                 library(devtools)
                               
                 devtools::install_github("PrincyJohnson/EffectivePopSize")
