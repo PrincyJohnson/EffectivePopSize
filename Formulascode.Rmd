@@ -1,0 +1,45 @@
+---
+title: "Manuscript1"
+author: "Josephine Johnson"
+date: "2022-12-20"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Effective Population Size
+
+Using the following equation, effective population size (Ne) was calculated based on linkage disequilibrium (LD) data between the markers for both NDSU and USDA:
+
+${N}_{e}=\frac{\mathbf{1}}{\mathbf{4}{c}}\left(\frac{\mathbf{1}}{{E}\left(r^\mathbf{2}\right)}\ -\ 1\right) - eqn. (1)$
+
+Where,
+  $N_e$ = effective population size
+      
+  $c$ = genetic distance in morgan's
+      
+  $E(r^2)$ = expected $r^2$
+
+In order to find the ‘c’ (genetic distance in Morgan’s), the physical distance between the markers was divided by 200kb.  
+
+### Prediction of $E(r^2)$ (expected $r^2$):
+
+$\hat\mu=X{\hat{\beta}} - eqn. (2)$ 
+
+$X=\left[\begin{matrix}1&c\\1&c\\.&.\\.&.\\1&c\\\end{matrix}\right],Y=\left[\begin{matrix}meanr^2\\.\\.\\meanr^2\\\end{matrix}\right]$
+
+
+$\hat{\beta}=\left(X^\prime X\right)^{-\mathbf{1}}\ XY - eqn. (3)$
+
+Expected $r^2$ was predicted using equation (2). Now, let's fit the Sved (1971) formula - equation (1),
+
+Firstly, we split the values into predictor (X) and response (Y). Here, we ignored the intercept $\beta_0$ and calculated the coefficient $\beta_1$.
+
+$Y = (\frac{1}{{\hat{\mu}}})-1, X =4\times c$
+
+Using the previous equation (3), we calculated the $N_e$ coefficient.
+
+
+
