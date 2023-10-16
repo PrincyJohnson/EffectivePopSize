@@ -4,11 +4,28 @@ This package is designed to facilitate the estimation of effective population si
 
 **Install Package:**
 
-                Library(devtools)
+                #if (!require("BiocManager", quietly = TRUE))
+                       install.packages("BiocManager")
+                       
+                BiocManager::install("gdsfmt")
+                
+                BiocManager::install("SNPRelate")
+                
+                library(gdsfmt)
+                
+                library(SNPRelate)
+                
+                library(dplyr)
+                
+                library(ggplot2)
+                
+                library(tidyr)
+                
+                library(devtools)
                               
                 devtools::install_github("PrincyJohnson/EffectivePopSize")
                               
-                Library(EffectivePopSize)
+                library(EffectivePopSize)
 
 
 
