@@ -3,6 +3,12 @@
 # Author: Josephine Johnson
 
 
+library(gdsfmt)
+library(SNPRelate)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
 Nemodel<- function(bed,fam,bim,ld,cM, species_name){
 
   ### Build the gdsdb
