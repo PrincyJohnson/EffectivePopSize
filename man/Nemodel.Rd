@@ -3,6 +3,8 @@
 \title{Effective Population Size}
 \usage{
 Nemodel(bed, bim, fam, ld, cM, species_name)
+
+Input files - Bed, Bim, Fam are plink bfiles and ld is the linkage disequilibrium file
 }
 \description{
 This function provides PCA output, PCA plots, LD plots and Ne estimation

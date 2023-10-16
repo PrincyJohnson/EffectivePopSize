@@ -2,12 +2,15 @@
 # Vcf markers data - ld file
 # Author: Josephine Johnson
 
-
-library(gdsfmt)
-library(SNPRelate)
-library(dplyr)
-library(ggplot2)
-library(tidyr)
+# if (!require("BiocManager", quietly = TRUE))
+#   install.packages("BiocManager")
+# BiocManager::install("gdsfmt")
+# BiocManager::install("SNPRelate")
+# library(gdsfmt)
+# library(SNPRelate)
+# library(dplyr)
+# library(ggplot2)
+# library(tidyr)
 
 Nemodel<- function(bed,fam,bim,ld,cM, species_name){
 
@@ -94,9 +97,9 @@ Nemodel<- function(bed,fam,bim,ld,cM, species_name){
   ### To predict expected (r2), create a model with mean r2 and distance
   X<-as.matrix(cbind(1,Meanr2$distance))
   beta.hat<-solve(t(X)%*%X) %*% t(X) %*% Meanr2$`mean(r2)`
-  mu.hat<- X %*% beta.hat  ###predict
+  mu.hat<- X %*% beta.hat  ###prediction
 
-  ### Fit Sved formula using linear regression - remove intercept
+  ### Fit Sved formula using linear regression - remove intercept, method inspired from Juma et al., (2021) estimation of Ne in rice
   response<- (1/mu.hat)-1
   predictor<- Meanr2$distance*4
 
