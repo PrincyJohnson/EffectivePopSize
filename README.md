@@ -4,7 +4,7 @@ This package is designed to facilitate the estimation of effective population si
 
 **Install Package:**
 
-                #if (!require("BiocManager", quietly = TRUE))
+                if (!require("BiocManager", quietly = TRUE))
                        install.packages("BiocManager")
                        
                 BiocManager::install("gdsfmt")
