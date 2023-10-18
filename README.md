@@ -37,6 +37,6 @@ This package is designed to facilitate the estimation of effective population si
                               
                cM = 1 cM value in your species (in Kb) eg. 200
 
-               species_name = "Peas"
+               species_name =  eg. "Peas"
 
 **This package offers a comprehensive suite of tools for genetic analysis, including Principal Component Analysis (PCA), Linkage Disequilibrium (LD) plot, recombination frequency plot, and precise estimation of Ne (effective population size).**
