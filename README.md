@@ -1,6 +1,8 @@
 # EffectivePopSize
 This package is designed to facilitate the estimation of effective population size (Ne) in crop species by analyzing linkage disequilibrium data stored in .ld files.
 
+Fitting the Sved (1971) formula was inspired by Juma et al. (2021)
+
 
 **Install Package:**
 
